@@ -41,12 +41,12 @@ def split_chars(line):
 
 # this small routine is used to accumulate query idf values
 def elen_q(elen, a):
-    return (float(math.pow(a.idf, 2)) + float(elen))
+    return float(math.pow(a.idf, 2)) + float(elen)
 
 
 # this small routine is used to accumulate document tfidf values
 def elen_d(elen, a):
-    return (float(math.pow(a.tfidf, 2)) + float(elen))
+    return float(math.pow(a.tfidf, 2)) + float(elen)
 
 
 """
